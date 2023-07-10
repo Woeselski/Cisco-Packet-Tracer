@@ -1,0 +1,28 @@
+#Basis Configuratie
+#Dit moet uitgevoerd worden op apparaten zoals Switches, Routers, MLS en Servers.
+#na // is de beschrijving.
+Ena                                              //Enable de Command Line
+
+Conf T                                           //Configure Terminal
+
+Hostname SW3                                     //Stelt de naam in van het apparaat. Router is R, Switch is SW
+ 
+Banner motd #Authorrized Access Only#            //Stelt een bericht in als je wilt inloggen
+
+Service password-encryption                      //Stelt in dat een wachtwoord nodig is
+
+Line console 0                                   //Zorgt ervoor dat je naar (config-line) gaat i.p.v. Config
+
+Password cisco                                   //Stelt het wachtwoord in voor het eerdere command. Dit wachtwoord MOET ALTIJD "cisco" zijn.
+Login
+
+Exit                                             //Gaat weer uit (Config-Line)
+
+Enable secret cisco                              
+
+Line vty 0 4                                     //Zorgt ervoor dat je naar (config-line) gaat i.p.v. Config
+
+Password cisco                                   //Stelt het wachtwoord in voor het eerdere command. Dit wachtwoord MOET ALTIJD "cisco" zijn.
+Login
+
+End                                              //Beëindingt de sessie. Basisconfiguratie is compleet.
