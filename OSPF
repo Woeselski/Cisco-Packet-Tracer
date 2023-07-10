@@ -1,0 +1,28 @@
+#OSPF
+#Open Shortest Path First zorgt ervoor dat er tussen netwerken gepingt kan worden. Dit moet op routers.
+
+ena
+
+conf t
+
+router ospf 1
+
+network 192.168.10.0 0.0.0.255 area 0   //ik weet niet of dit moet. dit gebruikt wildcard mask. (die shit waar die guy in die ene les het over had)
+
+no shutdown
+
+
+//op een andere router
+
+ena
+
+conf t
+
+router ospf 1
+network 192.168.10.0 0.0.0.255 area 0  
+
+show ip ospf neighbor
+
+show ip protocols
+
+no shutdown
