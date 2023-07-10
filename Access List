@@ -1,0 +1,15 @@
+#Access List
+#Hiermee kan je ervoor zorgen dat bepaalde computers elkaar niet kunnen pingen
+
+ena
+
+conf t
+
+ip access-list standard st1
+deny 192.168.10.0 0.0.0.255
+deny 192.168.10.0 0.0.0.255
+permit any
+exit
+
+int g0/0/2
+ip access-group st1 out
