@@ -1,0 +1,45 @@
+#VTP
+#VTP betekent VLAN Trunking Protocol, oftewel hoe je de trunk moet configureren.
+
+Ena
+
+Conf t
+
+feature vtp                             //enabled VTP
+
+vtp domain Hoerizoon                    // vtp domain [NAAM]
+
+vtp password cisco
+
+vtp version 2
+
+vtp mode client                        
+
+no shutdown
+
+end
+
+
+Ena
+
+sh vtp status
+
+Configure Terminal
+
+Hostname MLS
+
+vtp version 2
+
+vtp domain KutExamen
+
+
+ena
+conf t
+
+Hostname SW1
+
+vtp domain PolioForma
+
+vtp version 2
+
+vtp mode client
