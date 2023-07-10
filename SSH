@@ -1,0 +1,24 @@
+#SSH
+#Dit moet geïnstalleerd worden op de routers, switches, MLS en servers.
+
+ena
+
+conf t
+
+crypto key generate rsa
+
+ip ssh version 2
+
+line vty 0 4
+transport input ssh
+login local
+
+username cisco password cisco
+
+
+
+#Verbinden met SSH via Command Line Interface
+
+ena
+
+ssh -l cisco 192.168.10.1
