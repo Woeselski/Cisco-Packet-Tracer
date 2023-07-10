@@ -1,0 +1,29 @@
+#VLAN
+#Dit moet op elke Router, Switch en server gezet worden.
+
+Ena
+
+Conf t
+
+
+VLAN10                                           //Deze command zorgt ervoor dat je in de configuratie van de VLAN bent.
+
+name Hoerizoon                                   //Veranderd de naam naar Hoerizoon
+
+no shutdown                                      //Zet de VLAN aan
+
+sh vlan                                          //laat de vlans zien. je kan br erachter zetten voor de verkorte versie
+
+sh vtp status                                    //laat de vtp zien als dat nodig is.
+
+
+
+VLAN20                                           //Deze command zorgt ervoor dat je in de configuratie van de VLAN bent.
+
+name KutExamen                                   //Veranderd de naam naar KutExamen
+
+no shutdown                                      //Zet de VLAN aan
+
+sh vlan                                          //laat de vlans zien. je kan br erachter zetten voor de verkorte versie
+
+sh vtp status                                    //laat de vtp zien als dat nodig is.
