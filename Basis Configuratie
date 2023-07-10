@@ -26,3 +26,5 @@ Password cisco                                   //Stelt het wachtwoord in voor 
 Login
 
 End                                              //Beëindingt de sessie. Basisconfiguratie is compleet.
+
+copy running-config startup-config               //Slaat de commands op
