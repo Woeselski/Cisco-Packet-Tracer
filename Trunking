@@ -1,0 +1,10 @@
+#Trunking
+#Dit moet ingesteld worden op de Routers en Switches als de VTP op de server is gedaan.
+
+ena
+
+conf t
+
+interface FastEthernet0/1 //interface [POORTNAAM]
+
+switchport mode access trunk
