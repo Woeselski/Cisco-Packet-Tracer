@@ -1,0 +1,17 @@
+#Troubleshooting
+
+#LLDP = Link Layer Discovery Protocol
+
+ena
+
+show lldp med configuration FastEthernet0/1 // configuration [POORT]
+
+end
+
+#CDP = Cisco Discovery Protocol
+
+ena
+
+cdp run
+
+show cdp neigbors
