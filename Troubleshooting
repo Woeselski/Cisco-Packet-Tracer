@@ -15,3 +15,7 @@ ena
 cdp run
 
 show cdp neigbors
+
+#Andere Troubleshootmethodes:
+
+ping 192.168.10.1 //stuurt een ping naar het IP-adres en zou een ping terug moeten krijgen als het werkt
