@@ -1,0 +1,8 @@
+#Telnet
+#Check of telnet aan staat
+
+Conf T
+
+feature Telnet
+
+sh telnet 
