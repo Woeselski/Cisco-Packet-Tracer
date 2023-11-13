@@ -23,3 +23,9 @@ ping 192.168.10.1 //stuurt een ping naar het IP-adres en zou een ping terug moet
 tracert 192.168.10.1
 
 nslookup
+
+/////
+
+#Om IPs te ontdekken via LLDP
+
+Sh ip int br //Show IP Interface Brief, laat jou het IP zien van de interfaces
