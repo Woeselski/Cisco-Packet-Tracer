@@ -8,3 +8,12 @@ conf t
 interface FastEthernet0/1 //interface [POORTNAAM]
 
 switchport mode access trunk
+
+
+#Om te checken of het aan staat
+
+Sh interface trunk
+
+#en
+
+sh [POORTNAAM] switchport brief
