@@ -7,7 +7,7 @@ Conf t
 
 feature vtp                             //enabled VTP
 
-vtp domain Hoerizoon                    // vtp domain [NAAM]
+vtp domain Hoerizoon                    // vtp domain [NAAM] of vtp domain SOLAR
 
 vtp password cisco
 
